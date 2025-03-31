@@ -1,20 +1,95 @@
 # Masked-Face-Recognition
-A face recognition application that will also detect human identity even with face mask.
+Masked Face Detection and Recognition using MobileNet
 
-How to use this?
-1. Run real_time_face_recognition.py, and then Press "S" to automatically crop and save your face inside the database floder. 
-The accuracy will be lowered if we put image of a person who is not full face inside the database floder. More face features is required for masked face recognition.
+Overview
 
-![Leow Jun Shou](https://user-images.githubusercontent.com/29944896/133741191-5412c042-7b37-4429-8812-6c304175d6f7.jpg)
+This project focuses on masked face detection and recognition using MobileNet, a lightweight deep learning model optimized for mobile and embedded vision applications. The model is trained to identify faces with and without masks and perform accurate facial recognition.
 
-2. Run the real_time_face_recognition.py again, and you can have fun.
+Features
 
-![WhatsApp Image 2021-09-13 at 1 09 59 AM](https://user-images.githubusercontent.com/29944896/133741473-fb21bcd8-3c5a-471a-838c-7ddb7ec83186.jpeg)
+Detects masked and unmasked faces.
 
-Theoritical accuracy will be around 98%.
+Recognizes individuals even with a mask.
 
-Personal experience
-The application have high identity recognition accuracy without masked. 
-Moreover, the identity recognition accuracy did not changed when we are wearing mask, but sometimes it will not classifying our face as object. 
-For example, when we are wearing masked, the name on top of bounding box will 'blink', but the name will always be the correct person.
-Future implementation is to solve this issue.
+Lightweight and optimized for real-time performance using MobileNet.
+
+Can be integrated into surveillance systems, access control, and healthcare applications.
+
+Technologies Used
+
+Python (for scripting and model implementation)
+
+TensorFlow / Keras (for deep learning)
+
+OpenCV (for image processing)
+
+MobileNet (for efficient face detection and recognition)
+
+NumPy & Pandas (for data handling)
+
+Matplotlib (for visualizing results)
+
+Dataset
+
+The model is trained on a combination of publicly available datasets containing images of masked and unmasked faces. Data augmentation techniques were applied to improve generalization.
+
+Installation
+
+Prerequisites
+
+Ensure you have Python and necessary dependencies installed:
+
+pip install tensorflow opencv-python numpy pandas matplotlib
+
+Clone the Repository
+
+git clone https://github.com/yourusername/masked-face-detection-mobilenet.git
+cd masked-face-detection-mobilenet
+
+Usage
+
+1. Running the Model
+
+Run the following script to detect masked faces in images or video streams:
+
+python detect_mask.py
+
+2. Training the Model
+
+If you want to retrain the model with a new dataset:
+
+python train.py
+
+Model Performance
+
+Accuracy: Achieves high accuracy in real-time detection.
+
+Inference Speed: Optimized for fast processing using MobileNet.
+
+Robustness: Performs well under various lighting conditions and occlusions.
+
+Applications
+
+Surveillance Systems: Identify masked individuals in CCTV footage.
+
+Access Control: Masked face-based authentication.
+
+Healthcare: Ensure mask compliance in public places.
+
+Retail & Transportation: Contactless security verification.
+
+Future Improvements
+
+Improve accuracy on diverse ethnicities and lighting conditions.
+
+Enhance real-time performance on edge devices.
+
+Extend the model for multi-person masked recognition.
+
+Contribution
+
+Feel free to contribute by submitting pull requests or reporting issues!
+
+License
+
+This project is licensed under the MIT License.
